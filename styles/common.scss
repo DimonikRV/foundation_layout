@@ -1,0 +1,80 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+.logo {
+  &-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+      font-weight: $font-weight-header;
+      font-size: 20px;
+      line-height: $line-height-reg;
+      color: $color-text-main;
+    }
+    &__description {
+      display: none;
+      font-size: 18px;
+      line-height: $line-height-reg;
+      font-weight: $font-weight-regular;
+      text-align: center;
+      color: $color-text-second;
+
+      @include for-large-screen {
+        display: block;
+      }
+    }
+  }
+  @include for-large-screen {
+    display: flex;
+  }
+}
+
+.button {
+  background: $background-button;
+  color: $color-white;
+  &_white {
+    background-color: $background-button_white;
+    background-blend-mode: overlay;
+    color: $color-button-white;
+  }
+  &:not(:last-child) {
+    margin-bottom: 15px;
+    @include for-large-screen {
+      margin-right: 10px;
+    }
+  }
+  @include for-large-screen {
+    width: 160px;
+  }
+}
+.buttons {
+  height: 118px;
+  &__button {
+    padding: 17px 0 18px 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    height: 48px;
+    width: 100%;
+    font-weight: $font-weight-header;
+    font-size: 18px;
+    line-height: 13px;
+    @include for-large-screen {
+      width: 160px;
+    }
+  }
+  @include for-large-screen {
+    display: flex;
+  }
+}
+.page {
+  width: 1400px;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  @include for-large-screen {
+  }
+}

@@ -1,0 +1,120 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+
+.audience {
+  padding: 50px 15px;
+  width: 100%;
+  background-color: $background-audience;
+  height: 1808px;
+  @include for-large-screen {
+    padding: 108px 115px 110px 115px;
+    height: 983px;
+  }
+  &-content {
+    width: 100%;
+    @include for-large-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1170px;
+      height: 765px;
+    }
+  }
+  &-intro {
+    margin-bottom: 25px;
+    max-width: 555px;
+    @include for-large-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 111px;
+      width: 555px;
+      height: 354px;
+    }
+    &__preview {
+      margin-bottom: 17px;
+      height: 34px;
+      text-align: center;
+      font-weight: $font-weight-header;
+      font-size: $font-size-small;
+      line-height: $line-height-mid;
+      color: $color-text-first;
+
+      @include for-large-screen {
+        margin-bottom: 24px;
+      }
+    }
+    &__prev-headline {
+      margin-bottom: 18px;
+      height: 80px;
+      text-align: center;
+      font-weight: $font-weight-header;
+      font-size: $font-size-head;
+      line-height: 40px;
+      letter-spacing: -0.357143px;
+      color: $color-text-first;
+
+      @include for-large-screen {
+        margin-bottom: 30px;
+        height: 112px;
+        font-size: 56px;
+        line-height: 56px;
+      }
+    }
+    &__benefits {
+      margin-bottom: 30px;
+      height: 136px;
+      text-align: center;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-mid;
+      line-height: $line-height-mid;
+      color: $color-text-first;
+
+      @include for-large-screen {
+        margin-bottom: 34px;
+      }
+    }
+  }
+  &-categories {
+    width: 290px;
+    height: 300px;
+    @include for-large-screen {
+      align-self: flex-start;
+      display: flex;
+      width: 100%;
+    }
+    &-posters {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+      width: 290px;
+      height: 300px;
+      border-radius: 8px;
+      background: $color-white;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+        inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      @include for-large-screen {
+        margin: 0 15px;
+        width: 262px;
+      }
+      &_focus {
+        background: $background-button;
+      }
+      & img {
+        margin-bottom: 22px;
+        max-width: 100%;
+      }
+      &__name {
+        width: 250px;
+        height: 28px;
+        text-align: center;
+        font-weight: $font-weight-header;
+        font-size: 22px;
+        line-height: $line-height-reg;
+        color: $color-text-first;
+      }
+    }
+  }
+}

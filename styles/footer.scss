@@ -1,0 +1,180 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+.footer {
+  padding: 40px 15px 22px 15px;
+  @include for-large-screen {
+    padding: 43px 0 15px 0;
+  }
+  &-communications {
+    @include for-large-screen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 129px 0 129px;
+    }
+  }
+  &-nav {
+    @include for-large-screen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      border-top: 1px solid rgba(43, 41, 45, 0.1);
+    }
+    &__links {
+      @include for-large-screen {
+        margin-left: 129px;
+      }
+    }
+    &__social {
+      margin-top: 30px;
+      @include for-large-screen {
+        margin: 0 131px 0 0;
+      }
+    }
+  }
+  &-links {
+    width: 180px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: $font-weight-regular;
+    line-height: 22px;
+
+    @include for-large-screen {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      color: $color-text-second;
+    }
+  }
+  &-social {
+    @include for-large-screen {
+      display: flex;
+      justify-content: space-between;
+      width: 97px;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.market-offer {
+  margin-bottom: 40px;
+
+  & > *:not(:last-child) {
+    @include for-large-screen {
+      margin-bottom: 26px;
+    }
+  }
+  &__logo {
+    margin-bottom: 31px;
+    & img {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      @include for-large-screen {
+        width: 62px;
+        height: 62px;
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  &__conveniences {
+    display: none;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: $font-weight-regular;
+    line-height: 26px;
+
+    @include for-large-screen {
+      display: block;
+      width: 360px;
+      height: 85px;
+    }
+  }
+}
+
+.logo-title__title {
+  text-align: center;
+  @include for-large-screen {
+    text-align: left;
+  }
+}
+
+.logo-footer__description {
+  text-align: center;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  @include for-large-screen {
+    display: block;
+    padding-left: 0;
+  }
+  &__app {
+    height: 40px;
+    &:not(:last-child) {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    &_apple {
+      width: 135px;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &_play-market {
+      width: 116px;
+    }
+  }
+}
+.about-company {
+  padding-top: 30px;
+  border-top: 1px solid rgba(43, 41, 45, 0.1);
+  @include for-large-screen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    width: 559px;
+    height: 231px;
+    border: 0;
+  }
+  &__column {
+    width: 290px;
+    height: 175px;
+    @include for-large-screen {
+      flex: 1;
+    }
+  }
+}
+
+.column-item {
+  margin-bottom: 30px;
+  &:not(:last-child) {
+    @include for-large-screen {
+      margin-right: 29px;
+    }
+  }
+  &__title {
+    margin-bottom: 18px;
+    font-weight: $font-size-head;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.list-item {
+  font-weight: $font-weight-regular;
+  font-size: 18px;
+  line-height: 30px;
+  &__nav {
+    color: $color-text-second;
+  }
+}

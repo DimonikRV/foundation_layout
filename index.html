@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <wrapper class="page">
+      <header class="header">
+        <div class="header-logo logo">
+          <img
+            class="header-logo__icon"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+            alt="icon"
+          />
+          <div class="header-logo__logo-title logo-title">
+            <div class="logo-title__title">Foundation</div>
+            <div class="logo-title__description">Startup landing template</div>
+          </div>
+        </div>
+        <nav class="header-nav">
+          <a class="header-nav__item header-nav__item_selected" href="#">Home</a>
+          <a class="header-nav__item" href="#">Stories</a>
+          <a class="header-nav__item" href="#">Library</a>
+          <i class="header-nav__arrow"></i>
+        </nav>
+        <button class="header-nav__button button">Get Started</button>
+        <button class="header-nav-burger"><span class="header-nav-burger__icon"></span></button>
+      </header>
+      <main class="content">
+        <section class="headline">
+          <section class="headline-content">
+            <h1 class="headline-content__title">Build stunning websites & apps.</h1>
+            <p class="headline-content__description">
+              Create live segments and target the right people for messages based on their
+              behaviors.
+            </p>
+            <div class="headline-content__buttons buttons">
+              <button class="buttons__button button">Get Started</button>
+              <button class="buttons__button button_white">Learn More</button>
+            </div>
+            <div class="headline-content__banner">
+              <img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+                alt="background"
+              />
+            </div>
+          </section>
+        </section>
+        <section class="audience">
+          <div class="audience-content">
+            <div class="audience-content__intro audience-intro">
+              <h3 class="audience-intro__preview">Engage Visitors</h3>
+              <h2 class="audience-intro__prev-headline">Understand your audience</h2>
+              <p class="audience-intro__benefits">
+                Early stage company? Eligible applicants get all of our products for just $49 a
+                month.
+              </p>
+              <div class="audience-intro__buttons buttons">
+                <button class="buttons__button button">Get Started</button>
+                <button class="buttons__button button_white">Learn More</button>
+              </div>
+            </div>
+            <div class="audience-content__categories audience-categories">
+              <figure class="audience-categories-posters">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
+                  alt="user-card"
+                />
+                <figcaption class="audience-categories-posters__name">Developers</figcaption>
+              </figure>
+              <figure class="audience-categories-posters audience-categories-posters_focus">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
+                  alt="user-card"
+                />
+                <figcaption class="audience-categories-posters__name">Entertainment</figcaption>
+              </figure>
+              <figure class="audience-categories-posters">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
+                  alt="user-card"
+                />
+                <figcaption class="audience-categories-posters__name">Athletes</figcaption>
+              </figure>
+              <figure class="audience-categories-posters">
+                <img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
+                  alt="user-card"
+                />
+                <figcaption class="audience-categories-posters__name">Creators</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="order">
+          <div class="order-intro">
+            <div class="order-intro__img">
+              <img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
+                alt="illustration-window"
+              />
+            </div>
+            <div class="order-intro__section order-section">
+              <div class="order-section__title">
+                <h2>Start your free trial.</h2>
+              </div>
+              <p class="order-section__notificate">
+                Get notified about company updates, news and blog posts. We hate spam.
+              </p>
+              <form class="order-section__form order-form">
+                <input
+                  class="order-form__input"
+                  type="email"
+                  name="email-form"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  class="order-form__input-mobile"
+                  type="email"
+                  name="email-form"
+                  placeholder="            Enter your email  "
+                  required
+                />
+                <button class="buttons__button button" type="submit">Get Started</button>
+              </form>
+              <span class="order-section__terms order-terms"
+                >Free 14-day trial · Easy setup · Cancel any time. Check out
+                <a class="order-terms__link" href="#">Terms of Use.</a></span
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-communications">
+          <div class="footer-communications__marketing market-offer">
+            <div class="market-offer__logo logo">
+              <img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
+                alt="icon"
+              />
+              <div class="market-offer-logo logo-title">
+                <div class="logo-title__title">Foundation</div>
+                <div class="logo-footer__description">Startup landing template</div>
+              </div>
+            </div>
+            <p class="market-offer__conveniences">
+              Foundation is a website template for startups and small teams. It helps to build a
+              website in no time.
+            </p>
+            <div class="market-offer__apps apps">
+              <a class="apps__app apps__app_apple" href="#" target="_blank"
+                ><img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
+                  alt="app-store"
+              /></a>
+              <a class="apps__app apps__app_play-market" href="#" target="_blank"
+                ><img
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
+                  alt="app-store"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-descr__about-company about-company">
+            <div class="about-company__column column-item">
+              <h3 class="column-item__title">Product</h3>
+              <ul class="column-item__list">
+                <li class="list-item"><a class="list-item__nav" href="#">Acquire Users</a></li>
+                <li class="list-item"><a class="list-item__nav" href="#">Content Marketing</a></li>
+                <li class="list-item"><a class="list-item__nav" href="#">Website Templates</a></li>
+                <li class="list-item">
+                  <a class="list-item__nav" href="#">Customer Management</a>
+                </li>
+                <li class="list-item"><a class="list-item__nav" href="#">Virtual Inbox</a></li>
+              </ul>
+            </div>
+            <div class="about-company__column column-item">
+              <h3 class="column-item__title">Company</h3>
+              <ul class="column-item__list">
+                <li class="list-item">
+                  <a class="list-item__nav" href="#">Acquire Users</a>
+                </li>
+                <li class="list-item">
+                  <a class="list-item__nav" href="#">Content Marketing</a>
+                </li>
+                <li class="list-item">
+                  <a class="list-item__nav" href="#">Website Templates</a>
+                </li>
+                <li class="list-item">
+                  <a class="list-item__nav" href="#">Customer Management</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <nav class="footer-nav__links footer-links">
+            <a class="footer-links__item" href="#">Terms</a>
+            <a class="footer-links__item" href="#">Privacy</a>
+            <a class="footer-links__item" href="#">Licence</a>
+          </nav>
+          <div class="footer-nav__social footer-social">
+            <a class="footer-social__item" href="https://twitter.com/" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png"
+                alt="twit"
+            /></a>
+            <a class="footer-social__item" href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png"
+                alt="fb"
+            /></a>
+            <a class="footer-social__item" href="https://www.linkedin.com/" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"
+                alt="linkedIn"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </wrapper>
+  </body>
+</html>

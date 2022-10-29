@@ -1,0 +1,34 @@
+@import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'audience.scss';
+@import 'order.scss';
+@import 'footer';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: $main-font-family;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
