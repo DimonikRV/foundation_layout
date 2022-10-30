@@ -79,6 +79,8 @@ a {
   height: 118px;
   @include for-large-screen {
     display: flex;
+    height: 48px;
+    margin-bottom: 0;
   }
 }
 .page {

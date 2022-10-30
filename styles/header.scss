@@ -7,13 +7,15 @@
   height: 64px;
 
   @include for-large-screen {
-    position: absolute;
-    z-index: 1;
-    top: 39px;
-    left: 130px;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: $background-headline;
+  }
+  &-menu {
     display: flex;
     justify-content: space-between;
-    background: $background-headline;
     width: 1140px;
     height: 62px;
   }
@@ -25,17 +27,18 @@
       height: 48px;
 
       @include for-large-screen {
-        margin: 0 15px 0 0;
-        width: 62px;
-        height: 62px;
+        margin: 2px 15px 0 0;
+        width: 60px;
+        height: 60px;
       }
     }
   }
   &-nav {
     display: none;
     @include for-large-screen {
-      display: block;
-      margin: 7px 56px 0 auto;
+      display: flex;
+      align-items: top;
+      margin: 0 0 30px 0;
     }
     &-burger {
       margin-left: auto;
@@ -57,10 +60,11 @@
     }
 
     &__item {
-      text-decoration: none;
-      color: $color-text-first;
+      margin-top: 7px;
       font-size: 18px;
-      line-height: $line-height-reg;
+      line-height: 25px;
+      color: rgb(43, 41, 45);
+
       &:not(:last-child) {
         margin-left: 50px;
       }
@@ -71,16 +75,10 @@
     }
     &__arrow {
       display: inline-block;
-      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
-      margin: 0 56px 0 13px;
+      margin: 19px 56px 0 13px;
       width: 8px;
       height: 5px;
-    }
-    &__button {
-      display: none;
-      @include for-large-screen {
-        display: block;
-      }
+      background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
     }
   }
 }
