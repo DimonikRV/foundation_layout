@@ -7,7 +7,9 @@
   background-color: $background-audience;
   height: 1808px;
   @include for-large-screen {
-    padding: 108px 115px 110px 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 983px;
   }
   &-content {
@@ -16,20 +18,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 1170px;
       height: 765px;
     }
   }
   &-intro {
     margin-bottom: 25px;
-    max-width: 555px;
     @include for-large-screen {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 111px;
-      width: 555px;
-      height: 354px;
+      max-width: 555px;
     }
     &__preview {
       margin-bottom: 17px;
@@ -44,7 +43,7 @@
         margin-bottom: 24px;
       }
     }
-    &__prev-headline {
+    &__header {
       margin-bottom: 18px;
       height: 80px;
       text-align: center;
@@ -56,6 +55,7 @@
 
       @include for-large-screen {
         margin-bottom: 30px;
+        min-width: 555px;
         height: 112px;
         font-size: 56px;
         line-height: 56px;
@@ -72,16 +72,14 @@
 
       @include for-large-screen {
         margin-bottom: 34px;
+        height: 72px;
       }
     }
   }
   &-categories {
-    width: 290px;
-    height: 300px;
     @include for-large-screen {
       align-self: flex-start;
       display: flex;
-      width: 100%;
     }
     &-posters {
       display: flex;
@@ -97,7 +95,7 @@
         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       @include for-large-screen {
         margin: 0 15px;
-        width: 262px;
+        min-width: 262px;
       }
       &_focus {
         background: $background-button;

@@ -12,23 +12,6 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: $main-font-family;
-}
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
 }

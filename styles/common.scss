@@ -1,5 +1,24 @@
 @import 'variables.scss';
 @import 'breakpoints.scss';
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .logo {
   &-title {
     display: flex;
@@ -30,11 +49,20 @@
 }
 
 .button {
+  padding: 17px 0 18px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  outline: none;
+  border: 0;
+  height: 48px;
+  width: 100%;
+  font-weight: $font-weight-header;
+  font-size: 18px;
+  line-height: 13px;
   background: $background-button;
   color: $color-white;
   &_white {
     background-color: $background-button_white;
-    background-blend-mode: overlay;
     color: $color-button-white;
   }
   &:not(:last-child) {
@@ -49,21 +77,6 @@
 }
 .buttons {
   height: 118px;
-  &__button {
-    padding: 17px 0 18px 0;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 2px;
-    outline: none;
-    border: 0;
-    height: 48px;
-    width: 100%;
-    font-weight: $font-weight-header;
-    font-size: 18px;
-    line-height: 13px;
-    @include for-large-screen {
-      width: 160px;
-    }
-  }
   @include for-large-screen {
     display: flex;
   }
@@ -74,7 +87,5 @@
 }
 
 .content {
-  width: 100%;
-  @include for-large-screen {
-  }
+  width: 100vw;
 }

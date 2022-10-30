@@ -11,8 +11,8 @@
     z-index: 1;
     top: 39px;
     left: 130px;
-    margin: auto;
-    margin-bottom: 76px;
+    display: flex;
+    justify-content: space-between;
     background: $background-headline;
     width: 1140px;
     height: 62px;
@@ -72,7 +72,7 @@
     &__arrow {
       display: inline-block;
       background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
-      margin-left: 13px;
+      margin: 0 56px 0 13px;
       width: 8px;
       height: 5px;
     }
