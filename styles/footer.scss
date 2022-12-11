@@ -14,19 +14,32 @@
     }
   }
   &-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include for-large-screen {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       height: 50px;
       border-top: 1px solid rgba(43, 41, 45, 0.1);
     }
     &__links {
+      width: 180px;
+      height: 22px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
       @include for-large-screen {
         margin-left: 129px;
       }
     }
     &__social {
+      width: 180px;
+      height: 22px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
       margin-top: 30px;
       @include for-large-screen {
         margin: 0 131px 0 0;
@@ -43,6 +56,7 @@
     @include for-large-screen {
       display: flex;
       justify-content: space-between;
+      width: 97px;
     }
     &__item {
       color: $color-text-second;
@@ -135,11 +149,20 @@
     }
   }
 }
+.footer-descr__about-company {
+  @include for-large-screen {
+    margin: 0 97px 47px 0;
+  }
+}
 .about-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 30px;
   border-top: 1px solid rgba(43, 41, 45, 0.1);
   @include for-large-screen {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 0;
     width: 559px;
@@ -148,15 +171,24 @@
   }
   &__column {
     width: 290px;
-    height: 175px;
+    height: 100%;
+
     @include for-large-screen {
       flex: 1;
+    }
+  }
+  &__column:not(:last-child) {
+    @include for-large-screen {
+      margin-right: 29px;
     }
   }
 }
 
 .column-item {
   margin-bottom: 30px;
+  @include for-large-screen {
+    margin-bottom: 0;
+  }
   &:not(:last-child) {
     @include for-large-screen {
       margin-right: 29px;

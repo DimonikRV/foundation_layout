@@ -62,7 +62,7 @@ a {
   background: $background-button;
   color: $color-white;
   &_white {
-    background-color: $background-button_white;
+    background-color: $background-button;
     color: $color-button-white;
   }
   &:not(:last-child) {

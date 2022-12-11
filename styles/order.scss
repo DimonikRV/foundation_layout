@@ -12,8 +12,9 @@
     height: 441px;
   }
   &-intro {
+    display: flex;
+    justify-content: center;
     @include for-large-screen {
-      display: flex;
       align-items: center;
     }
     &__img {
