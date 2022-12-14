@@ -5,7 +5,7 @@
   padding: 50px 15px;
   width: 100%;
   background-color: $background-audience;
-  height: 1808px;
+
   @include for-large-screen {
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@
   }
   &-content {
     width: 100%;
+    height: 1808px;
     @include for-large-screen {
       display: flex;
       flex-direction: column;
