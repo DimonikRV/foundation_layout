@@ -294,7 +294,6 @@ a {
 }
 @media (min-width: 1400px) {
   .audience-categories {
-    align-self: flex-start;
     display: flex;
     flex-direction: row;
   }
@@ -462,6 +461,7 @@ a {
   height: 48px;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 2px;
+  text-align: center;
 }
 @media (min-width: 1400px) {
   .order-form__input-mobile {

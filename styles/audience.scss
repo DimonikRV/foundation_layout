@@ -81,7 +81,6 @@
     flex-direction: column;
     align-items: center;
     @include for-large-screen {
-      align-self: flex-start;
       display: flex;
       flex-direction: row;
     }
