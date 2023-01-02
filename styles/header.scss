@@ -33,6 +33,9 @@
       }
     }
   }
+  .logo-descriiption {
+    display: none;
+  }
   &-nav {
     display: none;
     @include for-large-screen {

@@ -8,16 +8,17 @@
   @include for-large-screen {
     position: relative;
     display: flex;
-    height: 685px;
-    padding: 76px 0 0 0;
+    height: 609px;
+    padding: 0;
   }
   &-content {
     width: 100%;
 
     @include for-large-screen {
+      margin: 81px auto 0 auto;
       position: relative;
-      margin: auto;
       width: 1140px;
+      height: 456px;
     }
     &__title {
       margin-bottom: 24px;
@@ -26,6 +27,7 @@
       font-weight: $font-weight-header;
       line-height: 50px;
       letter-spacing: -0.3125px;
+      color: $color-text-first;
 
       @include for-large-screen() {
         position: relative;
@@ -46,6 +48,7 @@
       font-size: 24px;
       font-weight: $font-weight-regular;
       line-height: $line-height-mid;
+      color: $color-text-first;
 
       @include for-large-screen {
         position: relative;

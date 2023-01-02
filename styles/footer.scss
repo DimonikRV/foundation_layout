@@ -5,19 +5,25 @@
   @include for-large-screen {
     padding: 43px 0 15px 0;
   }
+  &-container {
+    @include for-large-screen {
+      margin: 0 auto;
+      max-width: 1140px;
+    }
+  }
   &-communications {
     @include for-large-screen {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 0 129px 0 129px;
+    }
+    &__marketing {
+      margin: 0 126px 40px 0;
     }
   }
   &-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     @include for-large-screen {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -30,9 +36,6 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
-      @include for-large-screen {
-        margin-left: 129px;
-      }
     }
     &__social {
       width: 180px;
@@ -41,9 +44,6 @@
       font-weight: 400;
       line-height: 22px;
       margin-top: 30px;
-      @include for-large-screen {
-        margin: 0 131px 0 0;
-      }
     }
   }
   &-links {
@@ -77,8 +77,6 @@
 }
 
 .market-offer {
-  margin-bottom: 40px;
-
   & > *:not(:last-child) {
     @include for-large-screen {
       margin-bottom: 26px;
