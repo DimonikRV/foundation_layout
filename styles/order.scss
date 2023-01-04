@@ -2,13 +2,13 @@
 @import 'breakpoints.scss';
 .order {
   padding: 50px 15px;
-  height: 827px;
   background: $background-order;
 
   @include for-large-screen {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
     height: 441px;
   }
   &-intro {
@@ -20,18 +20,17 @@
     &__img {
       display: flex;
       justify-content: center;
-      margin: 0 45px 40px 45px;
+      margin: 0 auto 40px auto;
       width: 200px;
       height: 220px;
 
       @include for-large-screen {
         margin: 0 121px 0 0;
-        height: 296px;
         width: 269px;
+        height: 296px;
       }
       & img {
         width: 100%;
-        height: 100%;
         @include for-large-screen {
           width: 269px;
         }
@@ -48,18 +47,16 @@
       font-weight: 700;
       line-height: 40px;
       letter-spacing: -0.25px;
-        color: rgba(43, 41, 45, 1);
-        @include for-large-screen {
-          margin: 0 0 12px 0;
-          text-align: left;
-        }
+      color: $color-text-first;
+      @include for-large-screen {
+        margin: 0 0 12px 0;
+        text-align: left;
       }
     }
     &__notificate {
-      display: block;
       margin-bottom: 40px;
+      height: 167px;
       text-align: left;
-       height: 167px;
       font-weight: $font-weight-regular;
       font-size: 22px;
       line-height: 32px;
@@ -67,6 +64,7 @@
 
       @include for-large-screen {
         margin-bottom: 26px;
+        height: 64px;
       }
     }
     &__form {
@@ -100,8 +98,8 @@
       padding: 17px 15px;
       width: 100%;
       height: 48px;
-      border-radius: 2px;
       border: 1px solid rgba(43, 41, 45, 0.2);
+      border-radius: 2px;
       text-align: center;
       color: $color-text-first;
 

@@ -11,12 +11,14 @@ p {
 ul,
 li {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
 }
 
 .logo {
@@ -49,24 +51,25 @@ a {
 }
 
 .button {
+  width: 100%;
+  height: 48px;
   padding: 17px 0 18px 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
   outline: none;
   border: 0;
-  height: 48px;
-  width: 100%;
+  border-radius: 2px;
   font-weight: $font-weight-header;
   font-size: 18px;
   line-height: 13px;
-  background: $background-button;
   color: $color-white;
+  background: $background-button;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   &_white {
     background-color: $background-button;
     color: $color-button-white;
   }
   &:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     @include for-large-screen {
       margin-right: 10px;
     }
@@ -76,18 +79,9 @@ a {
   }
 }
 .buttons {
-  height: 118px;
   @include for-large-screen {
     display: flex;
     height: 48px;
     margin-bottom: 0;
   }
-}
-.page {
-  width: 1400px;
-  min-height: 100vh;
-}
-
-.content {
-  width: 100vw;
 }
