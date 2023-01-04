@@ -7,21 +7,18 @@
   @include for-large-screen {
     position: relative;
     display: flex;
-    height: 609px;
   }
   &-content {
     padding: 35px 15px 36px 15px;
 
     @include for-large-screen {
-      margin: 81px auto 0 auto;
       position: relative;
+      margin: 81px auto 126px auto;
       padding: 0;
       width: 1140px;
-      height: 456px;
     }
     &__title {
       margin-bottom: 24px;
-      height: 205px;
       text-align: left;
       font-size: 50px;
       font-weight: $font-weight-header;
@@ -29,21 +26,19 @@
       letter-spacing: -0.3125px;
       color: $color-text-first;
 
-      @include for-large-screen() {
+      @include for-large-screen {
         position: relative;
         z-index: 2;
         margin-bottom: 34px;
-        width: 754px;
-        height: 165px;
+        max-width: 754px;
         font-weight: $font-weight-header;
         font-size: 80px;
-        line-height: 78px;
+        line-height: 82px;
         letter-spacing: -0.5px;
       }
     }
     &__description {
       margin-bottom: 30px;
-      height: 172px;
       text-align: left;
       font-size: 24px;
       font-weight: $font-weight-regular;
@@ -55,7 +50,6 @@
         z-index: 2;
         margin-bottom: 58px;
         width: 456px;
-        height: 102px;
         font-size: 24px;
         line-height: $line-height-mid;
       }

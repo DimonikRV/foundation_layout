@@ -9,14 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 983px;
+    padding: 108px 0 110px 0;
   }
   &-content {
     @include for-large-screen {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 765px;
     }
     &__categories {
       margin-top: 40px;
@@ -28,12 +27,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 111px;
+      margin-bottom: 71px;
       max-width: 555px;
     }
     &__preview {
       margin-bottom: 17px;
-      height: 34px;
       text-align: center;
       font-weight: $font-weight-header;
       font-size: $font-size-small;
@@ -46,7 +44,6 @@
     }
     &__header {
       margin-bottom: 18px;
-      height: 80px;
       text-align: center;
       font-weight: $font-weight-header;
       font-size: $font-size-head;
@@ -56,24 +53,20 @@
 
       @include for-large-screen {
         margin-bottom: 30px;
-        min-width: 555px;
-        height: 112px;
         font-size: 56px;
         line-height: 56px;
       }
     }
     &__benefits {
       margin-bottom: 30px;
-      height: 136px;
       text-align: center;
       font-weight: $font-weight-regular;
       font-size: $font-size-mid;
-      line-height: $line-height-mid;
+      line-height: 36px;
       color: $color-text-first;
 
       @include for-large-screen {
         margin-bottom: 34px;
-        height: 72px;
       }
     }
   }
@@ -100,6 +93,9 @@
         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       &:not(:last-child) {
         margin-bottom: 15px;
+        @include for-large-screen {
+          margin-bottom: 0;
+        }
       }
       @include for-large-screen {
         margin: 0 15px;

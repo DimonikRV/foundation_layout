@@ -3,7 +3,7 @@
 .footer {
   padding: 40px 15px 22px 15px;
   @include for-large-screen {
-    padding: 43px 0 15px 0;
+    padding: 43px 0 0 0;
   }
   &-container {
     @include for-large-screen {
@@ -18,13 +18,15 @@
       align-items: center;
     }
     &__marketing {
-      margin: 0 126px 40px 0;
+      margin-bottom: 40px;
+      @include for-large-screen {
+        margin-bottom: 47px;
+      }
     }
   }
   &-nav {
     @include for-large-screen {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       height: 50px;
@@ -32,14 +34,12 @@
     }
     &__links {
       width: 180px;
-      height: 22px;
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
     }
     &__social {
       width: 180px;
-      height: 22px;
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
@@ -48,7 +48,6 @@
   }
   &-links {
     width: 180px;
-    height: 22px;
     font-size: 14px;
     font-weight: $font-weight-regular;
     line-height: 22px;
@@ -56,7 +55,7 @@
     @include for-large-screen {
       display: flex;
       justify-content: space-between;
-      width: 97px;
+      align-items: center;
     }
     &__item {
       color: $color-text-second;
@@ -66,7 +65,9 @@
     @include for-large-screen {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 97px;
+      margin: 0;
     }
     &__item {
       &:not(:last-child) {
@@ -77,6 +78,7 @@
 }
 
 .market-offer {
+  padding-bottom: 12px;
   & > *:not(:last-child) {
     @include for-large-screen {
       margin-bottom: 26px;
@@ -89,9 +91,9 @@
       margin: auto;
       margin-bottom: 20px;
       @include for-large-screen {
+        margin: 0 15px 0 0;
         width: 62px;
         height: 62px;
-        margin: 0 15px 0 0;
       }
     }
   }
@@ -106,7 +108,6 @@
     @include for-large-screen {
       display: block;
       width: 360px;
-      height: 85px;
     }
   }
 }
@@ -164,12 +165,10 @@
     justify-content: space-between;
     padding-top: 0;
     width: 559px;
-    height: 231px;
     border: 0;
   }
   &__column {
     width: 290px;
-    height: 100%;
 
     @include for-large-screen {
       flex: 1;
